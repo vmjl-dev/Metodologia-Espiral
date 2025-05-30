@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología en Espiral - Cuentas por Cobrar WEB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="title is-1 has-text-centered">Metodología en Espiral</h1>
+            <h2 class="subtitle is-3 has-text-centered">Desarrollo del Sistema de Cuentas por Cobrar WEB</h2>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <p class="has-text-centered">
+                        El programa de cuentas por cobrar fue concebido para centralizar la gestión de las deudas pendientes de los clientes, 
+                        ofreciendo funciones clave como la actualización de deudas y la búsqueda eficiente de clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introducción -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-7">
+                    <h2 class="title is-3 section-title">Introducción</h2>
+                    <p>
+                        Desde el inicio se definieron objetivos claros: lograr una integración armoniosa del backend y el frontend, 
+                        donde funciones lógicas fueran implementadas de manera confiable. Para alcanzar estos objetivos, se adoptó la 
+                        metodología en espiral, la cual combina planificación, diseño, prototipado, pruebas y evaluación de riesgos 
+                        en múltiples ciclos, permitiéndo adaptar y evolucionar con cada iteración.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Tecnologías clave utilizadas:</strong>
+                        <br>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Axios</span>
+                        <span class="tech-badge">NodeCRON</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">HTML/CSS</span>
+                    </p>
+                </div>
+                <div class="column is-5">
+                    <div class="chart-container">
+                        <h3 class="title is-5 has-text-centered">Modelo de Desarrollo en Espiral</h3>
+                        <canvas id="spiralModelChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ciclos de Desarrollo -->
+    <section class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="title is-3 section-title">Ciclos de Desarrollo del Proyecto</h2>
+            
+            <div class="timeline">
+                <!-- Iteración 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="title is-4 has-text-primary">Primera Iteración: Requisitos y Análisis Inicial</h3>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Definir las necesidades del sistema: gestión de deudas, actualización de registros y búsqueda de clientes.</li>
+                            <li>Definir los tableros en PostgreSQL relacionados a los requerimientos del sistema.</li>
+                        </ul>
+                        <p><strong>Análisis de Riesgos:</strong></p>
+                        <div>
+                            <span class="risk-badge" style="background-color: #ff9e80;">Tipado de datos erróneo</span>
+                            <span class="risk-badge" style="background-color: #ff9e80;">Normalización incorrecta</span>
+                        </div>
+                        <p><strong>Resultado:</strong></p>
+                        <p>Se completó el modelo de datos en la base de datos designada como "gestion_clientes".</p>
+                    </div>
+                </div>
+                
+                <!-- Iteración 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="title is-4 has-text-primary">Segunda Iteración: Diseño y Modelado del Backend</h3>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Establecer la estructura inicial del proyecto determinando las tecnologías y herramientas a utilizar.</li>
+                            <li>Desarrollo inicial del backend con: Node.js, Express.js, Axios, NodeCRON, etc.</li>
+                        </ul>
+                        <p><strong>Análisis de Riesgos:</strong></p>
+                        <div>
+                            <span class="risk-badge" style="background-color: #ffcc80;">Integración de datos inconsistente</span>
+                            <span class="risk-badge" style="background-color: #ffcc80;">Acceso a métodos HTTP</span>
+                        </div>
+                        <p><strong>Resultado:</strong></p>
+                        <p>Se completó un diagrama de flujo preliminar y se realizó una primera evaluación de la arquitectura del backend usando Postman.</p>
+                    </div>
+                </div>
+                
+                <!-- Iteración 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="title is-4 has-text-primary">Tercera Iteración: Diseño del Frontend y Prototipado</h3>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Desarrollar un prototipo funcional tanto del backend como del frontend.</li>
+                            <li>Implementar funciones claves en un entorno controlado para validar su comportamiento.</li>
+                        </ul>
+                        <p><strong>Análisis de Riesgos:</strong></p>
+                        <div>
+                            <span class="risk-badge" style="background-color: #a5d6a7;">Validación de datos</span>
+                            <span class="risk-badge" style="background-color: #a5d6a7;">Compatibilidad en integración</span>
+                        </div>
+                        <p><strong>Resultado:</strong></p>
+                        <p>Se creó un prototipo que permitió simular el comportamiento del sistema. Se identificaron áreas de mejora en respuestas del servidor y usabilidad.</p>
+                    </div>
+                </div>
+                
+                <!-- Iteración 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="title is-4 has-text-primary">Cuarta Iteración: Refinamiento y Optimización</h3>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Mejorar la robustez y rendimiento de las funciones del backend.</li>
+                            <li>Incorporar mejoras visuales y de interacción en el frontend.</li>
+                        </ul>
+                        <p><strong>Análisis de Riesgos:</strong></p>
+                        <div>
+                            <span class="risk-badge" style="background-color: #90caf9;">Inconsistencias en actualización</span>
+                            <span class="risk-badge" style="background-color: #90caf9;">Seguridad de información</span>
+                        </div>
+                        <p><strong>Resultado:</strong></p>
+                        <p>Se realizaron ajustes aumentando estabilidad y precisión. El frontend se refinó para ofrecer una experiencia más fluida y moderna.</p>
+                    </div>
+                </div>
+                
+                <!-- Iteración 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="title is-4 has-text-primary">Quinta Iteración: Integración y Pruebas Completas</h3>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Integrar todas las funcionalidades desarrolladas.</li>
+                            <li>Implementar pruebas automatizadas y manuales para evaluar integridad, rendimiento y seguridad.</li>
+                        </ul>
+                        <p><strong>Análisis de Riesgos:</strong></p>
+                        <div>
+                            <span class="risk-badge" style="background-color: #ce93d8;">Interacciones imprevistas</span>
+                            <span class="risk-badge" style="background-color: #ce93d8;">Protección ante amenazas</span>
+                        </div>
+                        <p><strong>Resultado:</strong></p>
+                        <p>Se completaron las pruebas de integración, solucionando pequeños inconvenientes. El sistema puede actualizar y buscar datos de forma segura y robusta.</p>
+                    </div>
+                </div>
+                
+                <!-- Iteración 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="title is-4 has-text-primary">Sexta Iteración: Despliegue y Retroalimentación Continua</h3>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Desplegar el sistema en un entorno productivo.</li>
+                            <li>Establecer mecanismos de monitoreo y retroalimentación.</li>
+                        </ul>
+                        <p><strong>Análisis de Riesgos:</strong></p>
+                        <div>
+                            <span class="risk-badge" style="background-color: #ef9a9a;">Problemas de escalabilidad</span>
+                            <span class="risk-badge" style="background-color: #ef9a9a;">Adaptación a sugerencias</span>
+                        </div>
+                        <p><strong>Resultado esperado:</strong></p>
+                        <p>Despliegue exitoso con sistemas de monitoreo en tiempo real. Retroalimentación de usuarios para futuras mejoras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gráficas y Visualizaciones -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-3 section-title">Análisis Visual del Proyecto</h2>
+            
+            <div class="columns">
+                <div class="column">
+                    <div class="chart-container">
+                        <h3 class="title is-5 has-text-centered">Evolución de Riesgos por Iteración</h3>
+                        <canvas id="riskEvolutionChart"></canvas>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="chart-container">
+                        <h3 class="title is-5 has-text-centered">Nivel de Avance por Iteración</h3>
+                        <canvas id="progressChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <h3 class="title is-5 has-text-centered">Representación de la Metodología en Espiral</h3>
+                <div class="spiral-animation" id="spiralAnimation">
+                    <!-- Puntos de la espiral serán insertados por JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Metodología en Espiral</strong> aplicada al desarrollo del sistema de Cuentas por Cobrar WEB.
+            </p>
+            <p>
+                Proyecto desarrollado utilizando un enfoque iterativo e incremental con evaluación continua de riesgos.
+            </p>
+            <div class="mt-4">
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-code"></i>
+                    </span>
+                    <span>Desarrollo de Software</span>
+                </span>
+                <span class="icon-text ml-4">
+                    <span class="icon">
+                        <i class="fas fa-database"></i>
+                    </span>
+                    <span>Gestión de Bases de Datos</span>
+                </span>
+                <span class="icon-text ml-4">
+                    <span class="icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </span>
+                    <span>Metodología Iterativa</span>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
